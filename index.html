@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/7f5a701653.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo" alt="Logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p><i class="fa-solid fa-computer"></i> ECE Engineer</p>
+                    <h2>Hi, I am <span>Tanmay</span> <br> Mishra</h2>
+                    <blockquote style="font-style: italic;">
+                        <small>‘Hard work beats talent when talent doesn’t work hard.’</small>
+                    </blockquote>
+                </div>
+            </div>
+            
+        </div>
+        
+            
+        </div>
+        <!--------------------about---------------->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.png">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I’m Tanmay Mishra, the team leader of CropSky, a dedicated group of engineers working on cutting-edge drone technology for agriculture and defence. Currently pursuing my BTech at VIT Vellore, I have a strong interest in AI/ML, robotics, and ROS 2, and I’m passionate about applying these technologies to real-world challenges.
+
+                            Leading our team of seven, I’ve been actively involved in designing AI-powered drones and developing a custom Battery Management System (BMS) optimised for small-scale farming. My focus lies in leveraging advanced engineering solutions to create impactful and efficient systems that are both innovative and practical.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links"  onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML/CSS, React.js</span><br>Building user-friendly Web/App interfaces</li>
+                                <li><span>ROS2, OpenCV, Gazebo</span><br>Designing realistic robotics simulations</li>
+                                <li><span>Python, Java, MongoDB, Firebase</span><br>Versatile in programming languages and frameworks</li>
+                                <li><span>ESP32, Raspberry Pi, Arduino</span><br>Extensive experience with various hardware platforms</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Team Leader</span><br>CropSky, Vellore, India | Aug 2024 – Present</li>
+                                <ul>
+                                    <li>Developing a drone-based crop health system, cutting manual inspection by 60 percent using AI and NDVI imagery.</li>
+                                </ul>
+                                <li><span>ML Intern</span><br>Bharat Intern, Online | Jan 2024 – Feb 2024</li>
+                                <ul>
+                                    <li>Developed and deployed machine learning systems with 95.67 percent accuracy, optimized for real-time interaction via Streamlit.</li>
+                                </ul>
+                                <li><span>Business Analyst Intern</span><br>Finlatics, Online | Jul 2023 – Aug 2023</li>
+                                <ul>
+                                    <li>Conducted financial data analysis using Excel and Python to derive insights, facilitating informed strategic decision-making.</li>
+                                    <li>Created interactive dashboards and visual reports in Power BI to effectively convey key metrics and trends.</li>
+                                    <li>Earned a letter of recommendation for exceptional performance and valuable contributions to the team.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>BTech in Electronics and Communication</span><br>Focused studies in AI, robotics, Electronics, Communication and embedded systems</li>
+                                <li><span>Advanced Workshops</span><br>Hands-on training in innovative technologies</li>
+                                <li><span>Continuous Learning</span><br>Staying updated with cutting-edge research and advancements</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------------Services---------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">What I Offer</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Software Expertise</h2>
+                        <p>Crafting innovative software solutions with precision and passion.</p>
+                        <a href="https://www.linkedin.com/in/thetanmaymishra/">Discover More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-gear"></i>
+                        <h2>Hardware Integration</h2>
+                        <p>Bridging the gap between code and hardware for seamless functionality.</p>
+                        <a href="https://www.linkedin.com/in/thetanmaymishra/">Discover More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h2>Beyond the Books</h2>
+                        <p>Unveiling my pursuits and passions beyond academics.</p>
+                        <a href="https://sites.google.com/view/cropsky/home?authuser=2">Explore Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!--------------------Portfolio---------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <!-- Project 1 -->
+                    <div class="work">
+                        <img src="images/work-1.png" alt="Bodhi App">
+                        <div class="layer">
+                            <h3>Bodhi App</h3>
+                            <p>An AI-driven healthcare companion empowering expecting mothers with personalised insights and cutting-edge solutions for fetal well-being.</p>
+                            <a href="https://bodhi-three.vercel.app/" target="_blank" aria-label="Bodhi App Link">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="work">
+                        <img src="images/work-2.png" alt="Radar Signal Processing Research">
+                        <div class="layer">
+                            <h3>Pioneering Radar Signal Processing</h3>
+                            <p>Dove deep into the realms of signal analysis to author a groundbreaking research paper on advanced techniques for precise target detection and range estimation using MATLAB.</p>
+                            <a href="https://ieeexplore.ieee.org/document/10724608" target="_blank" aria-label="Research Paper Link">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="work">
+                        <img src="images/work-3.png" alt="Fractal Antenna Design">
+                        <div class="layer">
+                            <h3>Innovative Fractal Antenna Design</h3>
+                            <p>Conceptualised and crafted a sophisticated fractal antenna using HFSS, seamlessly merging intricate mesh configurations to achieve superior performance.</p>
+                            <a href="https://drive.google.com/file/d/1rvo5djDJH0dsP3VcXLuy2Ikz2VCXRlqo/view?usp=sharing" target="_blank" aria-label="Fractal Antenna Design Link">
+                                <i class="fa-solid fa-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/file/d/1eodSCPYmkVyx6T7tFCZlQy67YOKWfJ_U/view?usp=sharing" class="btn">Explore More</a>
+            </div>
+        </div>
+        
+        
+        <!--------------------Contact---------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-paper-plane"></i> thetanmaymishra@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i> +91 9516727469</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/profile.php?id=100009008235484"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://x.com/thetanmaymishra"><i class="fa-brands fa-twitter-square"></i></a>
+                            <a href="https://www.instagram.com/cropsky_official/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/thetanmaymishra/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/thetanmaymishraa"><i class="fa-solid fa-code-fork"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download My Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form id="contactForm">
+                            <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                            <input type="email" id="emailid" name="Email" placeholder="Your Email" required>
+                            <textarea id="msgContent" name="Message" rows="6" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>   Copyright 2024 &copy; Made with <i class="fa-solid fa-heart" style="color: #dc0909;"></i> by Tanmay Mishra . All rights reserved.</p>
+            </div>
+        </div>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link"); 
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab"); 
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab"); 
+            }
+        </script>
+
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right = "-200px";
+            }
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+        <script src="./mail.js"></script>
+
+    </body>
+</html>
